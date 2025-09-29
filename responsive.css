@@ -1,0 +1,408 @@
+/* ==========================================================================
+   FIXED RESPONSIVE CSS - PROPER BREAKPOINT RANGES
+   ========================================================================== */
+
+/* Tablet Portrait - 768px to 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .home2 button {
+    font-size: 2.2vw;
+  }
+  
+  #main-h1 {
+    font-size: 4vw;
+    margin: 26px 20px;
+  }
+  
+  .card h1 {
+    font-size: 2.2vw;
+  }
+  
+  .left {
+    width: 35vw;
+  }
+  
+  .songsList ul li {
+    font-size: 1.8vw;
+  }
+  
+  .playbar {
+    width: 85vw;
+  }
+}
+
+/* Tablet Small - 481px to 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+  .home2 button {
+    font-size: 2.5vw;
+  }
+  
+  #main-h1 {
+    font-size: 5vw;
+    margin: 26px 20px;
+  }
+  
+  .card h1 {
+    font-size: 2.5vw;
+  }
+  
+  .left {
+    width: 40vw;
+    position: absolute;
+    left: -100%;
+    z-index: 10;
+  }
+  
+  .right {
+    width: 100vw;
+  }
+  
+  #hamburger {
+    display: inline;
+  }
+  
+  #closeImg {
+    display: block;
+  }
+  
+  .songsList ul li {
+    font-size: 2vw;
+  }
+  
+  .playbar {
+    width: 88vw;
+  }
+}
+
+/* Large Mobile - 391px to 480px */
+@media (min-width: 391px) and (max-width: 480px) {
+  .home2 button {
+    font-size: 3.2vw;
+  }
+  
+  #global-logo img {
+    position: absolute;
+    left: 51px;
+  }
+  
+  .playbar {
+    width: 86vw;
+  }
+  
+  .seekBar {
+    width: 94%;
+    margin: 5px 10px;
+  }
+  
+  .left {
+    width: 60vw;
+    position: absolute;
+    left: -100%;
+    z-index: 15;
+  }
+  
+  .right {
+    width: 100vw;
+  }
+  
+  #hamburger {
+    display: inline;
+  }
+  
+  #closeImg {
+    display: block;
+    top: 11px;
+  }
+  
+  .songsList ul li {
+    font-size: 13px;
+  }
+  
+  .songsList {
+    height: 350px;
+    margin-top: 17px;
+  }
+  
+  .left h1 {
+    font-size: 25px;
+  }
+  
+  .songControllContainer {
+    flex-direction: column;
+  }
+  
+  .contsss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card h1 {
+    font-size: 3vw;
+  }
+  
+  #main-h1 {
+    font-size: 5vw;
+    margin: 20px 20px;
+  }
+}
+
+/* Small Mobile - 321px to 390px (This is the key range for modern phones) */
+@media (min-width: 321px) and (max-width: 390px) {
+  .left {
+    width: 85vw;
+    position: absolute;
+    left: -100%;
+    z-index: 20;
+  }
+  
+  .right {
+    width: 100vw;
+  }
+  
+  .songInfo {
+    width: 70%;
+    font-size: 3.5vw;
+  }     
+  
+  .playNow span {
+    display: none;
+  }
+  
+  #closeImg {
+    left: 150px;
+    display: block;
+  }
+  
+  .songsList {
+    height: 70vh;
+    margin-top: 24px;
+  }
+  
+  .card {
+    width: 85%;
+    margin: 0 auto;
+  }
+  
+  .card h1 {
+    font-size: 4vw;
+  }
+  
+  #global-logo {
+    display: none;
+  }
+  
+  #homeIcon {
+    display: none;
+  }
+  
+  #searchIcon {
+    display: none;
+  }
+  
+  .logo-mobile {
+    width: 96px;
+    padding: 15px 0;
+    text-align: center;
+    display: block;
+  }
+  
+  .home2 button {
+    font-size: 4.5vw;
+    padding: 8px 15px;
+  }
+  
+  #main-h1 {
+    font-size: 7vw;
+    margin: 15px 10px;
+  }
+  
+  .playbar {
+    width: 85vw;
+    padding: 10px 0;
+  }
+  
+  .seekBar {
+    margin: 5px 8px;
+    width: 92%;
+  }
+  
+  #hamburger {
+    display: inline;
+  }
+  
+  #hamburger img {
+    width: 35px;
+  }
+  
+  .songsList ul li {
+    font-size: 3.8vw;
+    padding: 10px 5px;
+  }
+  
+  .songControllContainer {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .contsss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .cardContainer {
+    justify-content: center;
+    padding: 0 10px;
+  }
+}
+
+/* Extra Small Mobile - 320px and below */
+@media (max-width: 320px) {
+  .left {
+    width: 100vw;
+    position: absolute;
+    left: -100%;
+    z-index: 25;
+  }
+  
+  .right {
+    width: 100vw;
+  }
+  
+  .songInfo {
+    width: 100%;
+    font-size: 4vw;
+    text-align: center;
+  }     
+  
+  .playNow span {
+    display: none;
+  }
+  
+  #closeImg {
+    left: 200px;
+    top: 15px;
+    display: block;
+  }
+  
+  .songsList {
+    height: 75vh;
+    margin-top: 20px;
+  }
+  
+  .songsList ul li {
+    font-size: 4.2vw;
+    padding: 8px 3px;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+  }
+  
+  .playCont {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .card h1 {
+    font-size: 5vw;
+  }
+  
+  #global-logo {
+    display: none;
+  }
+  
+  #homeIcon {
+    display: none;
+  }
+  
+  #searchIcon {
+    display: none;
+  }
+  
+  .logo-mobile {
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+  }
+  
+  .logo-mobile img {
+    width: 80px;
+  }
+  
+  .home2 button {
+    font-size: 5.2vw;
+    padding: 6px 12px;
+  }
+  
+  #main-h1 {
+    font-size: 8vw;
+    margin: 10px 5px;
+  }
+  
+  .playbar {
+    width: 90vw;
+    padding: 8px 0;
+    margin: 10px auto;
+  }
+  
+  .seekBar {
+    margin: 3px 5px;
+    width: 90%;
+  }
+  
+  #hamburger {
+    display: inline;
+  }
+  
+  #hamburger img {
+    width: 40px;
+  }
+  
+  .songControllContainer {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .contsss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .cardContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .songControlls img {
+    width: 22px;
+  }
+  
+  .volDiv input {
+    width: 50px;
+  }
+}
+
+/* Landscape orientation fix for small screens */
+@media (max-height: 500px) and (orientation: landscape) {
+  .songsList {
+    height: 50vh;
+  }
+  
+  .playbar {
+    bottom: 5px;
+    padding: 5px 0;
+  }
+  
+  #main-h1 {
+    margin: 10px 20px;
+  }
+}
