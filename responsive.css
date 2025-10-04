@@ -111,6 +111,8 @@
   #closeImg {
     display: block;
     top: 11px;
+    left: 35px;
+
   }
   
   .songsList ul li {
@@ -169,7 +171,7 @@
   }
   
   #closeImg {
-    left: 150px;
+    left: 73px;
     display: block;
   }
   
