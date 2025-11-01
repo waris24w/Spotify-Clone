@@ -4,10 +4,10 @@
 
 /* Tablet Portrait - 768px to 1023px */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .home2 button {
-    font-size: 2.2vw;
+  .logo-mobile img {
+      width: 50px;
   }
-  
+
   #main-h1 {
     font-size: 4vw;
     margin: 26px 20px;
@@ -32,10 +32,22 @@
 
 /* Tablet Small - 481px to 767px */
 @media (min-width: 481px) and (max-width: 767px) {
-  .home2 button {
-    font-size: 2.5vw;
+  .logo-mobile {
+      width: 296px;
+      padding: 15px 0;
+      display: flex;
+      text-align: center;
   }
-  
+  .logo{
+    display: none;
+  }
+  .songControlls{
+    transform: scale(0.7);
+  }
+  .songTime{
+    right: 0;
+
+  }
   #main-h1 {
     font-size: 5vw;
     margin: 26px 20px;
@@ -46,7 +58,7 @@
   }
   
   .left {
-    width: 40vw;
+    width: 70vw;
     position: absolute;
     left: -100%;
     z-index: 10;
@@ -58,10 +70,13 @@
   
   #hamburger {
     display: inline;
+    margin-right: 401px;
+    transform: scale(1.5);
   }
   
   #closeImg {
     display: block;
+    left: 125px;
   }
   
   .songsList ul li {
@@ -69,16 +84,44 @@
   }
   
   .playbar {
-    width: 88vw;
+    width: 99vw;
+    margin: 0px;
+    border-radius: 1px;
   }
 }
 
 /* Large Mobile - 391px to 480px */
 @media (min-width: 391px) and (max-width: 480px) {
-  .home2 button {
-    font-size: 3.2vw;
-  }
+      .logo-mobile {
+          width: 296px;
+          padding: 15px 0;
+          display: flex;
+          text-align: center;
+        }
+        .logo-mobile img{
+          width: 50px;
+        }
   
+  .songDetail {
+    width: 79%;
+  }
+  .logo{
+    display: none;
+  }
+  .songTime{
+    bottom: 30px;
+    left: 285px;
+  }
+  .volDiv{
+    border: none;
+    background: none;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+  .songControlls{
+    transform: scale(0.7);
+
+  }
   #global-logo img {
     position: absolute;
     left: 51px;
@@ -86,6 +129,7 @@
   
   .playbar {
     width: 86vw;
+    height: 30vh;
   }
   
   .seekBar {
@@ -94,7 +138,7 @@
   }
   
   .left {
-    width: 60vw;
+    width: 75vw;
     position: absolute;
     left: -100%;
     z-index: 15;
@@ -106,6 +150,8 @@
   
   #hamburger {
     display: inline;
+    margin-right: 172px;
+    transform: scale(1.5);
   }
   
   #closeImg {
@@ -120,7 +166,7 @@
   }
   
   .songsList {
-    height: 350px;
+    height: 500px;
     margin-top: 17px;
   }
   
@@ -150,11 +196,41 @@
 
 /* Small Mobile - 321px to 390px (This is the key range for modern phones) */
 @media (min-width: 321px) and (max-width: 390px) {
+  .hamburger{
+    display: block;
+    font-size: 10vw;
+  }
+  .logo-mobile {
+    width: 296px;
+    padding: 15px 0;
+    display: flex;
+    text-align: center;
+    
+  }
+  
+  .logo-mobile img{
+      width: 30px;
+  }
+  .logo{
+    display: none;
+  }
   .left {
-    width: 85vw;
+    width: 95vw;
     position: absolute;
     left: -100%;
     z-index: 20;
+  }
+  .songTime{
+    bottom: 50px;
+    left: 204px;
+  }
+  .songControlls{
+    transform: scale(0.7);
+    top: 50px;
+    position: absolute;
+  }
+  .songDetail{
+    width: 300px;
   }
   
   .right {
@@ -171,8 +247,9 @@
   }
   
   #closeImg {
-    left: 73px;
+    left: 32vw;
     display: block;
+    top: 7px;
   }
   
   .songsList {
@@ -201,17 +278,8 @@
     display: none;
   }
   
-  .logo-mobile {
-    width: 96px;
-    padding: 15px 0;
-    text-align: center;
-    display: block;
-  }
   
-  .home2 button {
-    font-size: 4.5vw;
-    padding: 8px 15px;
-  }
+  
   
   #main-h1 {
     font-size: 7vw;
@@ -219,8 +287,10 @@
   }
   
   .playbar {
-    width: 85vw;
-    padding: 10px 0;
+    width: 99vw;
+    margin: 0px 0px;
+    height: 175px;
+    border-radius: 1px;
   }
   
   .seekBar {
@@ -230,6 +300,7 @@
   
   #hamburger {
     display: inline;
+    margin-right: 70px;
   }
   
   #hamburger img {
@@ -256,6 +327,11 @@
   .cardContainer {
     justify-content: center;
     padding: 0 10px;
+  }
+  .volDiv{
+    padding: 3px 3px;
+    margin-right: 159px;
+    margin-top: -60px;
   }
 }
 
@@ -337,10 +413,7 @@
     width: 80px;
   }
   
-  .home2 button {
-    font-size: 5.2vw;
-    padding: 6px 12px;
-  }
+ 
   
   #main-h1 {
     font-size: 8vw;

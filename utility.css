@@ -24,7 +24,7 @@
 	background-color: black;
 }
 .bg-grey{
-	background-color: #121212;
+	background-color: var(--background-color);
 }
 
 .rounded{

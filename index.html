@@ -4,42 +4,59 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Spotify - Web Player: Music for everyone</title>
+    <title>Web Player: Music for everyone</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="responsive.css">
     <link rel="stylesheet" type="text/css" href="utility.css">
     <link rel="icon" type="image/x-icon" href="/resourses/favicon.ico">
-
 </head>
 
 <body>
     <div class="main bg-black">
         <div class="nav">
-            <div class="home">
-                <ul>
-                    <li id="hamburger"><img class="invert" src="resourses/hamburger.svg"></li>
-                    <li id="global-logo"><img class="invert" src="resourses/logo.svg"></li>
-                    <li id="homeIcon" ><img class="invert" src="resourses/home.svg"></li>
-                    <li id="searchIcon"><img class="invert" src="resourses/search.svg"></li>
-                </ul>
+            <div class="logo">
+                <img src="resourses/music.png">
+                <h1>Classic Club <span class="music-word">Music</span></h1>
             </div>
-            <div class="home2 flex gap">
-                <button id="sign">Sign Up</button>
-                <button id="login">Login</button>
+            <div class="invert" id="hamburger">
+                <img src="resourses/hamburger.svg">
             </div>
+            <div class="icon-container">
+                    <!-- Instagram -->
+                    <a href="https://instagram.com" target="_blank" class="social-icon instagram" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+                        </svg>
+                    </a>
 
+                    <!-- Facebook -->
+                    <a href="https://facebook.com" target="_blank" class="social-icon facebook" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+                        </svg>
+                    </a>
+
+                    <!-- Twitter/X -->
+                    <a href="https://twitter.com" target="_blank" class="social-icon twitter" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                        </svg>
+                    </a>
+                </div>
         </div>
         <div class="container flex">
             <div class="left bg-grey rounded">
-                <div class="logo-mobile"><img class="invert" src="resourses/logo.svg"></div>
+                <div class="logo-mobile">
+                    <img src="resourses/music.png">
+                    <h1>Classic Club <span class="music-word">Music</span></h1>
+                </div>
                 <div class="heading">
                     <img class="invert" src="resourses/playlist.svg">
-            
+
                     <h1>Your Library</h1>
                     <div class="closeCont"><img id="closeImg" class="invert" src="resourses/close.svg"></div>
                 </div>
-                <div class="songsList" style="
-    color: white;">
+                <div class="songsList" style="color: white;">
                     <ul>
                         <li>
                             <img class="invert" src="resourses/musik.svg">
@@ -57,20 +74,12 @@
                     </ul>
                 </div>
 
-                <div class="footer">
-                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
-                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
-                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
-                    </div>
-                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
-                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
-                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
-                </div>
+
             </div>
             <div class="right bg-grey rounded">
                 <div class="spotifyList">
 
-                    <h1 id="main-h1">Trending songs</h1>
+                    <h1 id="main-h1">All Songs Album</h1>
                     <div class="cardContainer">
                         <div class="card">
                             <div class="play">
@@ -80,41 +89,71 @@
                                 </svg>
 
                             </div>
-                            <img src="resourses/img1">
+                            <img src="resourses/covers/1.jpg">
                             <h1>Arz Kiya Hai | Coke Studio Bharat</h1>
                             <p>Anuv jain</p>
                         </div>
                         <div class="card">
-                            <img src="resourses/img1">
+                            <img src="resourses/covers/2.webp">
                             <h1>Arz Kiya Hai | Coke Studio Bharat</h1>
                             <p>Anuv jain</p>
                         </div>
+                         <div class="card">
+                            <img src="resourses/covers/3.jpg">
+                            <h1>Arz Kiya Hai | Coke Studio Bharat</h1>
+                            <p>Anuv jain</p>
+                        </div>
+                         <div class="card">
+                            <img src="resourses/covers/4.jpeg">
+                            <h1>Arz Kiya Hai | Coke Studio Bharat</h1>
+                            <p>Anuv jain</p>
+                        </div>
+                        
+
                     </div>
                     <div class="playbar">
-
+                        
                         <div class="seekBar">
                             <div class="seekCircle"></div>
                         </div>
                         <div class="songControllContainer">
-                        <div class="songDetail"></div>
-                        <div class="songControlls">
-                            <img id="previuse" class="invert" src="resourses/previuse.svg">
-                            <div id="playBtn"><img id="btnImg" class="invert" src="resourses/play-button.svg"></div>
-                            <img id="next" class="invert" src="resourses/next.svg">
-                        </div>
-                        <div class="contsss">
-                        <div class="songTime"></div>
-                        <div class="volDiv">
-                            <img id="vol" class="invert" src="resourses/volume.svg">
-                            <input type="range">
-                        </div>
-                        </div>
+                            <div class="songDetail"></div>
+                            <div class="songControlls">
+                                <img id="previuse" class="invert" src="resourses/previuse.svg">
+                                <div class="button-wrapper">
+                                    <button class="sunset-button" id="playBtn">
+                                    <img id="btnImg" class="invert" src="resourses/play-button.svg">
+                                    </button>
+                                </div>
+                                <img id="next" class="invert" src="resourses/next.svg">
+                            </div>
+                            <div class="contsss">
+                                <div class="songTime"></div>
+                                <div class="volDiv">
+                                        <!-- Volume Icon -->
+                                         <img id="vol" class="invert" src="resourses/volume.svg">
+                                        <!-- Volume Slider -->
+                                        <input 
+                                            type="range" 
+                                            min="1" 
+                                            max="100" 
+                                            value="70" 
+                                            class="volume-slider" 
+                                            id="volumeSlider"
+                                        >
+
+                                        <!-- Volume Percentage -->
+                                        <!-- <span class="volume-value" id="volumeValue">70</span> -->
+                                    </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+   
+
     <script src="src.js"></script>
 
 </body>
